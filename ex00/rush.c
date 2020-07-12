@@ -6,7 +6,7 @@
 /*   By: ayeon <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 11:25:58 by ayeon             #+#    #+#             */
-/*   Updated: 2020/07/12 17:42:32 by ayeon            ###   ########.fr       */
+/*   Updated: 2020/07/12 17:55:49 by ayeon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,6 @@ int		fill_sub(int r, int c)
 		g_check_row[r][num] = 1;
 		g_check_col[c][num] = 1;
 		g_board[r][c] = num;
-		print_board();
-		write(1, "\n", 1);
 		if (fill_board(r, c + 1))
 			return (1);
 		g_check_row[r][num] = 0;
